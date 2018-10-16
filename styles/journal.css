@@ -43,20 +43,28 @@ fieldset {
 }
 
 .form__entry textarea {
-    height: 30vh;
+    height: 25vh;
+    resize: vertical;
+    overflow-x: hidden;
 }
 
-.form__case button {
+.form__entry--button-case {
+    border: 1px solid #000;
+}
+
+.form__entry--button-case button {
+    background-color: #999;
     font-size: .75em;
     letter-spacing: .2em;
     margin: 20px 10%;
     padding: 10px 0;
     text-transform: uppercase;
+    transition: all 400ms ease;
     width: 80%;
 }
 
-.form__case button:hover {
+.form__entry--button-case button:hover {
     color: #fff;
     cursor: pointer;
-    background-color: #999;
+    background-color: #333;
 }
